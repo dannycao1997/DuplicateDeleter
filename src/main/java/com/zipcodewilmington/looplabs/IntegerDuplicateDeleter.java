@@ -8,13 +8,13 @@ public final class IntegerDuplicateDeleter extends DuplicateDeleter<Integer> {
     public IntegerDuplicateDeleter(Integer[] intArray) {
         super(intArray);
     }
-
-    @Override  //removing integers that appear at least a specified number of times
+    
+    @Override  //removeDuplicates which removes all values in the array which occur at least the specified number of times.
     public Integer[] removeDuplicates(int maxNumberOfDuplications) {
         return removeBasedOnResultCount(maxNumberOfDuplications, false);
     }
 
-    @Override //removing integers that appear exactly a specified number of times
+    @Override //removeDuplicatesExactly which removes all values in the array which occur exactly the specified number of times.
     public Integer[] removeDuplicatesExactly(int exactNumberOfDuplications) {
         return removeBasedOnResultCount(exactNumberOfDuplications, true);
     }
