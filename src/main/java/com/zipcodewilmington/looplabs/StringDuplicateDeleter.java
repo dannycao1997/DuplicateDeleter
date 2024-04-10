@@ -5,6 +5,9 @@ package com.zipcodewilmington.looplabs;
  * @ATTENTION_TO_STUDENTS You are forbidden from modifying the signature of this class.
  */
 public final class StringDuplicateDeleter extends DuplicateDeleter<String> {
+    public StringDuplicateDeleter(String[] strArray) {
+        super(strArray);
+    }
 
 
     @Override //removeDuplicatesExactly which removes all values in the array which occur exactly the specified number of times.
