@@ -1,7 +1,6 @@
 package com.zipcodewilmington.looplabs;
 
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 
 /**
@@ -13,6 +12,7 @@ public final class IntegerDuplicateDeleter extends DuplicateDeleter<Integer> {
         super(intArray);
     }
 
+//Arrays.stream() method
     @Override  //removeDuplicates which removes all values in the array which occur at least the specified number of times.
     public Integer[] removeDuplicates(int maxNumberOfDuplications) {
         return Arrays.stream(array)
